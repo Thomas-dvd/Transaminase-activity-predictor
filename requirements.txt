@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+scipy
+torch
+transformers
+biopython
+rdkit
+pubchempy
+tqdm

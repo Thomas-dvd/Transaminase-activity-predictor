@@ -37,7 +37,7 @@ def charger_fasta(chemin_fasta):
 
 fichier_fasta = "FASTAs_TAMA.txt"
 fichier_csv = "Dataset.csv"
-fichier_sortie = "resultats_tam_avec_sequences.csv"
+fichier_sortie = "data_exploitable_python_01.csv"
 
 dico_sequences = charger_fasta(fichier_fasta)
 print(f"{len(dico_sequences)} séquences chargées depuis le fichier FASTA.")

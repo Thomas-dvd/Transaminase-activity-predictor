@@ -5,11 +5,25 @@ from rdkit import Chem
 from rdkit.Chem import AllChem, GraphDescriptors, Crippen, MolSurf, Lipinski
 import json
 
-
-# SORRY GUYS, teacher didn't wanted us to share his data ;(
-with open('config.json', 'r') as fichier:
-    noms_molecules = json.load(fichier)
-
+noms_molecules = {
+    "2OATA": "Oxoacetic Acid",
+    "Pyr": "2-Oxopropanoic Acid",
+    "2OPAA": "2-OxoPentanoic Acid",
+    "2OHAA": "2-OxoHexanoic Acid",
+    "4MT2OB": "4-(Methylthio)-2-oxobutanoic Acid",
+    "MOPA": "4-Methyl-2-oxopentanoic Acid",
+    "tMePyr": "3,3-Dimethyl-2-oxobutanoic acid",
+    "2O2PAA": "2-Oxo-2-phenylacetic Acid",
+    "2O4PBA": "2-Oxo-4-phenylbutanoic Acid",
+    "HPA": "3-Hydroxy-2-oxopropanoic Acid",
+    "3H2OBA": "3-Hydroxy-2-oxobutanoic Acid",
+    "BOHiPr": "3-Hydroxy-4-methyl-2-oxopentanoic Acid",
+    "BOHPh": "3-Hydroxy-2-oxo-3-phenylpropanoic Acid",
+    "4H2OA": "4-Hydroxy-2-oxopentanoic Acid",
+    "4H4PA": "4-Hydroxy-2-oxo-4-phenylbutanoic Acid",
+    "2KDGA": "3,4,5,6-Tetrahydroxy-2-oxohexanoic Acid",
+    "3.3diMe": "3,3-Dimethyl-2-oxopentanedioic Acid"
+}
 
 dictionnaire_smiles = {}
 
